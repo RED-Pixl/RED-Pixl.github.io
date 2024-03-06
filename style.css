@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend');
+
+body {
+    background-color: black;
+}
+
+h1, p {
+    color: white;
+    font-family: 'Lexend', sans-serif;
+}
+
+.title {
+    font-size: 10.0vh;
+    font-weight: medium;
+    margin-left: 5.0vh;
+}
+
+.name {
+    display: inline;
+    height: 10.5vh;
+    vertical-align: bottom;
+    margin-bottom: 1.5vh;
+}
+
+.profile_pic {
+    width: 80.0vh;
+    margin-right: 5.0vh;
+}
+
+.landing_page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100.0vh;
+}
+
+.spacer {
+    height: 100.0vh;
+}
