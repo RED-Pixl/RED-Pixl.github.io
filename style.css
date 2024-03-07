@@ -9,32 +9,66 @@ h1, p {
     font-family: 'Lexend', sans-serif;
 }
 
-.title {
-    font-size: 10.0svh;
-    font-weight: medium;
-    margin-left: 5.0svh;
+@media (min-aspect-ratio: 3/4) {
+
+    .title {
+        font-size: 10.0svh;
+        font-weight: medium;
+        margin-left: 5.0svh;
+    }
+
+    .name {
+        display: inline;
+        height: 10.5svh;
+        vertical-align: bottom;
+        margin-bottom: 1.5svh;
+    }
+
+    .profile_pic {
+        width: 80.0svh;
+        margin-right: 5.0svh;
+    }
+
+    .landing_page {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100.0svh;
+    }
+
 }
 
-.name {
-    display: inline;
-    height: 10.5svh;
-    vertical-align: bottom;
-    margin-bottom: 1.5svh;
-}
+@media (max-aspect-ratio: 3/4) {
 
-.profile_pic {
-    width: 80.0svh;
-    margin-right: 5.0svh;
-}
+    .title {
+        font-size: 10.0vw;
+        font-weight: medium;
+        margin-left: 5.0vw;
+        margin-right: 5.0vw;
+        margin-top: 0.0vh;
+        text-align: center;
+    }
 
-.landing_page {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100.0svh;
-}
+    .name {
+        display: inline;
+        height: 10.5vw;
+        vertical-align: bottom;
+        margin-bottom: 1.5vw;
+    }
 
-.spacer {
-    height: 100.0svh;
+    .profile_pic {
+        width: 80.0vw;
+        margin: 0.0vw;
+        margin-top: 2.5vh;
+    }
+
+    .landing_page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: top;
+        height: 100.0svh;
+    }
+
 }
