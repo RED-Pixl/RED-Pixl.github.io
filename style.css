@@ -9,47 +9,70 @@ h1, p, button {
     font-family: 'Lexend', sans-serif;
 }
 
+.title {
+    font-weight: medium;
+    animation: fade_in 1s;
+}
+
+.name {
+    display: inline;
+    vertical-align: bottom;
+}
+
+.profile_pic {
+    animation: fade_in 1.5s;
+}
+
+.landing_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100.0svh;
+}
+
+.social {
+    background-color: black;
+    border: none;
+    box-shadow: none;
+    animation: fade_up 2s;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.social:hover, .social:focus {
+    background-color: rgb(32, 32, 32);
+}
+
 @media (min-aspect-ratio: 4/3) {
 
     .title {
         font-size: 10.0svh;
-        font-weight: medium;
         margin-left: 5.0svh;
-        animation: fade_in 1s;
     }
 
     .name {
-        display: inline;
         height: 10.5svh;
-        vertical-align: bottom;
+        margin: 2.5svh;
         margin-bottom: 1.5svh;
+        margin-left: 0.0svh;
     }
 
     .profile_pic {
         width: 80.0svh;
         margin-right: 5.0svh;
-        animation: fade_in 1s;
     }
 
     .landing_page {
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        height: 100.0svh;
     }
 
     .social {
-        background-color: black;
         outline: 0.4svh solid rgb(32, 32, 32);
-        border: none;
         font-size: 5.0svh;
         height: 8svh;
         width: 32svh;
         border-radius: 4svh;
-        box-shadow: none;
-        animation: fade_up 2s;
-        cursor: pointer;
+        margin: 3svh;
     }
 
 }
@@ -58,51 +81,36 @@ h1, p, button {
 
     .title {
         font-size: 10.0vw;
-        font-weight: medium;
-        margin-left: 5.0vw;
-        margin-right: 5.0vw;
         margin-top: 0.0vw;
         text-align: center;
-        animation: fade_in 1s;
     }
 
     .name {
-        display: inline;
         height: 10.5vw;
-        vertical-align: bottom;
+        margin: 2.5vw;
         margin-bottom: 1.5vw;
+        margin-left: 0.0vw;
     }
 
     .profile_pic {
         width: 80.0vw;
         margin: 0.0vw;
         margin-top: 2.5svh;
-        animation: fade_in 1s;
     }
 
     .landing_page {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: top;
-        height: 100.0svh;
     }
 
     .social {
-        background-color: black;
         outline: 0.4vw solid rgb(32, 32, 32);
-        border: none;
         font-size: 5.0vw;
         height: 8vw;
-        width: 32vw;
+        width: 48vw;
         border-radius: 4vw;
-        box-shadow: none;
-        display: block;
-        margin: 0 auto;
-        margin-top: 3vw;
-        margin-bottom: 3vw;
-        animation: fade_up 2s;
-        cursor: pointer;
+        margin: 3vw;
+        margin-left: 20vw;
+        margin-right: 20vw;
     }
 
 }
