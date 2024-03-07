@@ -4,17 +4,18 @@ body {
     background-color: black;
 }
 
-h1, p {
+h1, p, button {
     color: white;
     font-family: 'Lexend', sans-serif;
 }
 
-@media (min-aspect-ratio: 3/4) {
+@media (min-aspect-ratio: 4/3) {
 
     .title {
         font-size: 10.0svh;
         font-weight: medium;
         margin-left: 5.0svh;
+        animation: fade_in 1s;
     }
 
     .name {
@@ -27,6 +28,7 @@ h1, p {
     .profile_pic {
         width: 80.0svh;
         margin-right: 5.0svh;
+        animation: fade_in 1s;
     }
 
     .landing_page {
@@ -37,17 +39,31 @@ h1, p {
         height: 100.0svh;
     }
 
+    .social {
+        background-color: black;
+        outline: 0.4svh solid rgb(32, 32, 32);
+        border: none;
+        font-size: 5.0svh;
+        height: 8svh;
+        width: 32svh;
+        border-radius: 4svh;
+        box-shadow: none;
+        animation: fade_up 2s;
+        cursor: pointer;
+    }
+
 }
 
-@media (max-aspect-ratio: 3/4) {
+@media (max-aspect-ratio: 4/3) {
 
     .title {
         font-size: 10.0vw;
         font-weight: medium;
         margin-left: 5.0vw;
         margin-right: 5.0vw;
-        margin-top: 0.0vh;
+        margin-top: 0.0vw;
         text-align: center;
+        animation: fade_in 1s;
     }
 
     .name {
@@ -60,7 +76,8 @@ h1, p {
     .profile_pic {
         width: 80.0vw;
         margin: 0.0vw;
-        margin-top: 2.5vh;
+        margin-top: 2.5svh;
+        animation: fade_in 1s;
     }
 
     .landing_page {
@@ -71,4 +88,45 @@ h1, p {
         height: 100.0svh;
     }
 
+    .social {
+        background-color: black;
+        outline: 0.4vw solid rgb(32, 32, 32);
+        border: none;
+        font-size: 5.0vw;
+        height: 8vw;
+        width: 32vw;
+        border-radius: 4vw;
+        box-shadow: none;
+        display: block;
+        margin: 0 auto;
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+        animation: fade_up 2s;
+        cursor: pointer;
+    }
+
+}
+
+@keyframes fade_in {
+    from {
+        opacity: 0;
+        transform: translateY(-5.0svh) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0.0svh) scale(1.0);
+    }
+}
+
+@keyframes fade_up {
+    from {
+        opacity: 0;
+        transform: translateY(5.0svh) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0.0svh) scale(1.0);
+    }
 }
