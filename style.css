@@ -2,9 +2,10 @@
 
 body {
     background-color: black;
+    margin: 0px;
 }
 
-h1, p, button {
+h1, p {
     color: white;
     font-family: 'Lexend', sans-serif;
 }
@@ -20,82 +21,97 @@ h1, p, button {
 }
 
 .profile_pic {
-    animation: fade_in 1.5s;
+    animation: fade_in 1s;
 }
 
 .landing_page {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100.0svh;
+    height: 100svh;
 }
 
 .social {
     background-color: black;
     border: none;
     box-shadow: none;
-    animation: fade_up 2s;
+    animation: fade_up 1s;
     transition: ease-in-out 0.5s;
     cursor: pointer;
+    padding: 0px;
 }
 
 .social:hover, .social:focus {
     background-color: rgb(32, 32, 32);
 }
 
-@media (min-aspect-ratio: 4/3) {
+@media (min-width: 1400px) {
 
     .title {
-        font-size: 10.0svh;
-        margin-left: 5.0svh;
+        font-size: 100px;
+        width: min-content;
+        margin: 10px;
     }
 
     .name {
-        height: 10.5svh;
-        margin: 2.5svh;
-        margin-bottom: 1.5svh;
-        margin-left: 0.0svh;
+        height: 105px;
+        margin: 25px;
+        margin-bottom: 16px;
+        margin-left: 0px;
+        padding-right: 25px;
     }
 
     .profile_pic {
-        width: 80.0svh;
-        margin-right: 5.0svh;
+        width: 800px;
+        margin: 10px;
     }
 
     .landing_page {
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .social {
-        outline: 0.4svh solid rgb(32, 32, 32);
-        font-size: 5.0svh;
-        height: 8svh;
-        width: 32svh;
-        border-radius: 4svh;
-        margin: 3svh;
+        outline: 4px solid rgb(32, 32, 32);
+        font-size: 50px;
+        height: 80px;
+        width: 160px;
+        border-radius: 40px;
+        margin: 10px;
+    }
+
+    .svg {
+        height: 60px;
+        margin: 10px;
     }
 
 }
 
-@media (max-aspect-ratio: 4/3) {
+@media (max-width: 1400px) {
+
+    .landing_page {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 
     .title {
-        font-size: 10.0vw;
-        margin-top: 0.0vw;
+        font-size: 100px;
+        margin: 10px;
+        margin-top: -25px;
+        width: 80vw;
         text-align: center;
     }
 
     .name {
-        height: 10.5vw;
-        margin: 2.5vw;
-        margin-bottom: 1.5vw;
-        margin-left: 0.0vw;
+        height: 105px;
+        margin: 0px;
+        margin-bottom: 15px;
     }
 
     .profile_pic {
-        width: 80.0vw;
-        margin: 0.0vw;
-        margin-top: 2.5svh;
+        width: 80vw;
+        margin: 10px;
+        margin-bottom: 0px;
     }
 
     .landing_page {
@@ -103,38 +119,75 @@ h1, p, button {
     }
 
     .social {
-        outline: 0.4vw solid rgb(32, 32, 32);
-        font-size: 5.0vw;
-        height: 8vw;
-        width: 48vw;
-        border-radius: 4vw;
-        margin: 3vw;
-        margin-left: 20vw;
-        margin-right: 20vw;
+        outline: 4px solid rgb(32, 32, 32);
+        font-size: 50px;
+        height: 80px;
+        width: 160px;
+        border-radius: 40px;
+        margin: 10px;
+        margin-top: 40px;
     }
 
+    .svg {
+        height: 60px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .title {
+        font-size: 60px;
+        margin: 10px;
+        margin-top: -25px;
+        text-align: center;
+        width: min-content;
+    }
+
+    .name {
+        height: 65px;
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+
+    .social {
+        outline: 2px solid rgb(32, 32, 32);
+        font-size: 30px;
+        height: 50px;
+        width: 100px;
+        border-radius: 25px;
+        margin: 10px;
+        margin-top: 40px;
+    }
+
+    .svg {
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 @keyframes fade_in {
     from {
         opacity: 0;
-        transform: translateY(-5.0svh) scale(0.9);
+        transform: translateY(-50px) scale(0.9);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0.0svh) scale(1.0);
+        transform: translateY(0px) scale(1.0);
     }
 }
 
 @keyframes fade_up {
     from {
         opacity: 0;
-        transform: translateY(5.0svh) scale(0.9);
+        transform: translateY(100px) scale(0.9);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0.0svh) scale(1.0);
+        transform: translateY(0px) scale(1.0);
     }
 }
