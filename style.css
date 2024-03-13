@@ -99,6 +99,7 @@ h1, p {
         margin-top: -25px;
         width: 80vw;
         text-align: center;
+        min-width: 540;
     }
 
     .name {
