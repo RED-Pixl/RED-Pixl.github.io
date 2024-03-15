@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Lexend');
 
+::-webkit-scrollbar {
+    width: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(32, 32, 32);
+    border-radius: 15px;
+    border: 10px solid black;
+}
+
 body {
     background-color: black;
     margin: 0px;
 }
 
-h1, p {
+h1, h2, h3, h4, h5, h6, p {
     color: white;
     font-family: 'Lexend', sans-serif;
 }
@@ -13,20 +27,33 @@ h1, p {
 .title {
     font-weight: medium;
     animation: fade_in 1s;
+    font-size: 100px;
+    margin: 10px;
 }
 
 .name {
     display: inline;
     vertical-align: bottom;
+    height: 105px;
+    margin: 25px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    padding-right: 25px;
 }
 
 .profile_pic {
     animation: fade_in 1s;
+    width: 800px;
+    margin: 10px;
 }
 
 .landing_page {
     display: flex;
-    height: 100svh;
+    height: max-content, 100svh;
+    min-height: 100svh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .social {
@@ -37,135 +64,108 @@ h1, p {
     transition: ease-in-out 0.5s;
     cursor: pointer;
     padding: 0px;
+    outline: 4px solid rgb(32, 32, 32);
+    font-size: 50px;
+    height: 80px;
+    width: 160px;
+    border-radius: 40px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-top: 40px;
 }
 
 .social:hover, .social:focus {
     background-color: rgb(32, 32, 32);
+    transform: scale(1.2);
 }
 
-@media (min-width: 1400px) {
-
-    .title {
-        font-size: 100px;
-        margin: 10px;
-    }
-
-    .name {
-        height: 105px;
-        margin: 25px;
-        margin-bottom: 16px;
-        margin-left: 0px;
-        padding-right: 25px;
-    }
-
-    .profile_pic {
-        width: 800px;
-        margin: 10px;
-    }
-
-    .landing_page {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .social {
-        outline: 4px solid rgb(32, 32, 32);
-        font-size: 50px;
-        height: 80px;
-        width: 160px;
-        border-radius: 40px;
-        margin: 10px;
-    }
-
-    .svg {
-        height: 60px;
-        margin: 10px;
-    }
-
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    font-size: 35px;
+    margin-inline: 15vw;
 }
 
-@media (max-width: 1400px) {
-
-    .landing_page {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .title {
-        font-size: 100px;
-        margin: 10px;
-        margin-top: -25px;
-        width: 80vw;
-        text-align: center;
-        min-width: 540;
-    }
-
-    .name {
-        height: 105px;
-        margin: 0px;
-        margin-bottom: 15px;
-    }
-
-    .profile_pic {
-        width: 80vw;
-        margin: 10px;
-        margin-bottom: 0px;
-    }
-
-    .landing_page {
-        flex-direction: column;
-    }
-
-    .social {
-        outline: 4px solid rgb(32, 32, 32);
-        font-size: 50px;
-        height: 80px;
-        width: 160px;
-        border-radius: 40px;
-        margin: 10px;
-        margin-top: 40px;
-    }
-
-    .svg {
-        height: 60px;
-        display: block;
-        margin: 0 auto;
-    }
+.text_link {
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
 }
 
-@media (max-width: 600px) {
+.text_link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 6px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+}
 
-    .title {
-        font-size: 60px;
-        margin: 10px;
-        margin-top: -25px;
-        text-align: center;
-        width: min-content;
-    }
+.text_link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 
-    .name {
-        height: 65px;
-        margin: 10px;
-        margin-bottom: 15px;
-    }
+.svg {
+    height: 60px;
+    margin: 10px;
+}
 
-    .social {
-        outline: 2px solid rgb(32, 32, 32);
-        font-size: 30px;
-        height: 50px;
-        width: 100px;
-        border-radius: 25px;
-        margin: 10px;
-        margin-top: 40px;
-    }
+.about_text {
+    flex: 0 0 auto;
+    max-width: 1500px;
+    text-align: center;
+}
 
-    .svg {
-        height: 40px;
-        display: block;
-        margin: 0 auto;
-    }
+.menue {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 50svh;
+    height: fit-content;
+}
+
+.menue_link {
+    margin: 100px;
+    font-size: 35px;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
+
+.menue_img {
+    height: 250px;
+    margin-bottom: 0px;
+}
+
+.menue_text {
+    margin: 0px;
+    height: 72px;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 100vh;
+    outline: 4px solid rgb(32, 32, 32);
+    transition: ease-in-out 0.5s;
+}
+
+.menue_link:hover, .menue_link:focus {
+    transform: scale(1.2);
+}
+
+.menue_link:hover > .menue_text {
+    background-color: rgb(32, 32, 32);
+}
+
+.menue_link:focus > .menue_text {
+    background-color: rgb(32, 32, 32);
 }
 
 @keyframes fade_in {
