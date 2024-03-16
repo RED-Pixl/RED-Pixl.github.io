@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .landing_page {
     display: flex;
-    height: max-content, 100svh;
+    height: max-content;
     min-height: 100svh;
     flex-direction: row;
     align-items: center;
@@ -74,7 +74,8 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 40px;
 }
 
-.social:hover, .social:focus {
+.social:hover,
+.social:focus {
     background-color: rgb(32, 32, 32);
     transform: scale(1.2);
 }
@@ -120,11 +121,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .about_text {
     flex: 0 0 auto;
-    max-width: 1500px;
+    max-width: min(1500px, 80vw);
     text-align: center;
 }
 
 .menue {
+    max-width: min(1500px, 90vw);
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -134,10 +137,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .menue_link {
-    margin: 100px;
+    margin: auto;
     font-size: 35px;
     text-decoration: none;
     transition: ease-in-out 0.5s;
+    cursor: pointer;
 }
 
 .menue_img {
@@ -156,15 +160,16 @@ h1, h2, h3, h4, h5, h6, p {
     transition: ease-in-out 0.5s;
 }
 
-.menue_link:hover, .menue_link:focus {
+.menue_link:hover,
+.menue_link:focus {
     transform: scale(1.2);
 }
 
-.menue_link:hover > .menue_text {
+.menue_link:hover>.menue_text {
     background-color: rgb(32, 32, 32);
 }
 
-.menue_link:focus > .menue_text {
+.menue_link:focus>.menue_text {
     background-color: rgb(32, 32, 32);
 }
 
@@ -189,5 +194,79 @@ h1, h2, h3, h4, h5, h6, p {
     to {
         opacity: 1;
         transform: translateY(0px) scale(1.0);
+    }
+}
+
+@media (max-width: 1950px) {
+    .title {
+        width: min-content;
+    }
+
+    .social {
+        margin-right: 30px;
+        height: 60px;
+        width: 120px;
+    }
+
+    .svg {
+        height: 45px;
+        margin: 0px;
+        padding-top: 7px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .landing_page {
+        flex-direction: column;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .profile_pic {
+        max-width: 90vw;
+    }
+    
+    .name {
+        align-self: center;
+        padding: 0px;
+        padding-inline: 50px;
+        margin-inline: 0px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menue_img {
+        height: 20vw;
+    }
+
+    .menue_link {
+        font-size: 2.8vw;
+        margin-block: 0px;
+    }
+
+    .menue_text {
+        height: 5.76vw;
+    }
+
+    .menue {
+        min-height: 40vw;
+    }
+}
+
+@media (max-width: 800px) {
+    .about {
+        font-size: 25px;
+    }
+}
+
+@media (max-aspect-ratio: 4/3) {
+    .landing_page {
+        min-height: max-content;
+    }
+
+    .about {
+        margin-top: 60px;
     }
 }
