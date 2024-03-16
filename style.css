@@ -19,7 +19,13 @@ body {
     margin: 0px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: white;
     font-family: 'Lexend', sans-serif;
 }
@@ -255,7 +261,7 @@ h1, h2, h3, h4, h5, h6, p {
     .profile_pic {
         max-width: 90vw;
     }
-    
+
     .name {
         align-self: center;
         padding: 0px;
