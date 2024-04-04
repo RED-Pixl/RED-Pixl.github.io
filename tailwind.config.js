@@ -11,8 +11,15 @@ export default {
       },
       colors: {
         'glassmorphism': 'rgb(0, 0, 0 / 5%)'
+      },
+      fontFamily: {
+        'normal': ['Lexend', 'sans-serif'],
+        'heading': ['Lexend Giga', 'sans-serif']
       }
     },
+    letterSpacing: {
+      tightest: '-.5em'
+    }
   },
   plugins: [],
 }
