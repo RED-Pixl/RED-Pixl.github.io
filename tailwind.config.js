@@ -15,11 +15,11 @@ export default {
       fontFamily: {
         'normal': ['Lexend', 'sans-serif'],
         'heading': ['Lexend Giga', 'sans-serif']
+      },
+      letterSpacing: {
+        tightest: '-.5em'
       }
     },
-    letterSpacing: {
-      tightest: '-.5em'
-    }
   },
   plugins: [],
 }
