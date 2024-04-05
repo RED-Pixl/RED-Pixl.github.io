@@ -12,7 +12,7 @@
         </div>
         <div class="font-heading font-black tracking-tightest items-center align-center">
                 <h1 class="text-5xl text-center font-black flex flex-col w-max pt-40 mx-auto">
-                        Schueler.In.TUM
+                        School Mania
                 </h1>
         </div>
 </template>

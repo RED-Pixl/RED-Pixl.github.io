@@ -5,7 +5,7 @@
 </script>
 
 <template>
-        <div class="w-64 h-64 justify-center items-center rounded-xl bg-cover shadow-xl shadow-black/30 transition-transform hover:scale-110" :style="{backgroundImage: 'url(' + image + ')'}">
+        <div class="w-64 h-64 justify-center items-center rounded-xl bg-cover shadow-xl shadow-black/30 transition-transform hover:scale-110 border-y border-b-white/10 border-t-white/15" :style="{backgroundImage: 'url(' + image + ')'}">
                 <div
                         class="relative top-52 mx-8 p-4 rounded-3xl border-y border-b-white/10 border-t-white/15 bg-black/15 shadow-xl shadow-black/30 backdrop-blur-3xl">
 

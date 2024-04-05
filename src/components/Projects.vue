@@ -1,5 +1,8 @@
 <script setup>
         import Card from './Card.vue'
+        import Tum from './projects/Tum.vue'
+        import SchoolMania from './projects/SchoolMania.vue'
+        import Website from './projects/Website.vue'
 </script>
 
 <script>
@@ -10,7 +13,10 @@
                         }
                 },
                 components: {
-                        Card
+                        Card,
+                        Tum,
+                        SchoolMania,
+                        Website
                 }
         }
 </script>
@@ -25,11 +31,17 @@
 
                         <Card name="Schueler.In.TUM" image="/src/assets/tum.jpg" class="m-12" @show="subpage = 'tum'"></Card>
 
-                        <Card name="School Mania" image="/src/assets/game.png" class="m-12" @show="subpage = 'game'"></Card>
+                        <Card name="School Mania" image="/src/assets/schoolMania.jpeg" class="m-12" @show="subpage = 'game'"></Card>
 
-                        <Card name="TJC-Team" image="/src/assets/tjc.jpg" class="m-12" @show="subpage = 'tjc'"></Card>
+                        <Card name="This Website" image="/src/assets/website.png" class="m-12" @show="subpage = 'website'"></Card>
                 </div>
         </div>
+
+        <Tum v-if="subpage === 'tum'" @back="subpage = 'main'"></Tum>
+
+        <SchoolMania v-if="subpage === 'game'" @back="subpage = 'main'"></SchoolMania>
+
+        <Website v-if="subpage === 'website'" @back="subpage = 'main'"></Website>
 </template>
 
 <style scoped></style>
