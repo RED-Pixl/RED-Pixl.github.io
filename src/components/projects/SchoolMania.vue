@@ -16,7 +16,7 @@
                 </h1>
         </div>
 
-        <div class="2xl:flex 2xl:flex-row justify-center">
+        <div class="2xl:flex 2xl:flex-row justify-center mt-12">
                 <img src="/src/assets/schoolMania.jpeg" class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                 <div>
