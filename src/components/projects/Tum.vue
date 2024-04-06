@@ -43,19 +43,21 @@
                 </h1>
         </div>
 
-        <div class="flex flex-row justify-center">
-                <img src="/src/assets/tum.jpg" class="w-96 h-96 m-16 justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
+        <div class="2xl:flex 2xl:flex-row justify-center">
+                <img src="/src/assets/tum.jpg" class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                 <div>
-                        <p class="m-12 w-5/6 max-w-7xl text-4xl drop-shadow-xl">
+                        <p class="m-12 max-2xl:mx-auto w-5/6 max-w-5xl font-normal max-2xl:text-center text-4xl drop-shadow-xl">
                                 Since the Wintersemester of 22/23, I've been studying Computersciene at TUM simultaniously to school thanks to Schueler.In.TUM. I took many different courses during the last semesters, e.g. EidI (2.3), PGdP (2.7) or ERA (1.7).
                                 <br> <br>
                                 Currently, I'm done with around {{ calcPercentage() }}% of my bachelors degree.
-                                <br> <br>
-                                If you are interested, you can visit the <a href="https://www.schueler.in.tum.de/" class="">Schueler.In.Tum-homepage</a> or contact me if you want to know more about my personal expirience.
                         </p>
                 </div>
         </div>
+
+        <p class="m-12 mx-auto w-5/6 max-w-[96rem] font-normal max-2xl:text-center text-4xl drop-shadow-xl">
+                If you are interested, you can visit the <a href="https://www.schueler.in.tum.de/" class="">Schueler.In.Tum-homepage</a> or contact me if you want to know more about my personal expirience.
+        </p>
 </template>
 
 <style scoped></style>

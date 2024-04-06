@@ -27,7 +27,7 @@
                         My Projects:
                 </h1>
 
-                <div class="flex flex-row my-16 tracking-normal justify-center">
+                <div class="flex flex-row mt-8 tracking-normal justify-center">
 
                         <Card name="Schueler.In.TUM" image="/src/assets/tum.jpg" class="m-12" @show="subpage = 'tum'"></Card>
 

@@ -16,12 +16,14 @@
                 </h1>
         </div>
 
-        <div class="flex flex-row justify-center">
-                <img src="/src/assets/website.png" class="w-96 h-96 m-16 justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
+        <div class="2xl:flex 2xl:flex-row justify-center mt-12">
+                <img src="/src/assets/website.png" class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                 <div>
-                        <p class="m-12 w-5/6 max-w-7xl font-normal text-4xl drop-shadow-xl">
+                        <p class="m-12 max-2xl:mx-auto w-5/6 max-w-5xl font-normal max-2xl:text-center text-4xl drop-shadow-xl">
                                 Well, since you are already here, I don't need to talk much about the content and the visuals of this website.
+                                <br> <br>
+                                But let me talk about the tech briefly: I use Vue with TailwindCSS for this website. There is honsetly no specific reason why I choose Vue, it was just the only frontend-framework I was familiar with.
                         </p>
                 </div>
         </div>
