@@ -38,7 +38,7 @@
                 programming languages. I also have expirience with Vue.js
         </p>
 
-        <div class="2xl:flex 2xl:flex-row justify-center mt-12">
+        <div class="flex flex-row justify-center mt-12">
                 <div>
                         <p
                                 class="m-12 max-2xl:mx-auto w-5/6 max-w-5xl font-normal max-2xl:text-center text-4xl drop-shadow-xl">
@@ -48,7 +48,7 @@
                         </p>
                 </div>
                 <img src="/src/assets/logo.png"
-                        class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
+                        class="w-64 h-64 2xl:w-96 2xl:h-96 m-16 2xl:my-auto max-2xl:mx-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
         </div>
 </template>
 

@@ -11,7 +11,7 @@
                 <img src="/src/assets/logo.png" class="w-96 h-96 mx-auto 2xl:m-16 justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                 <div class="my-auto">
-                        <p class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center text-4xl drop-shadow-xl">
+                        <p class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-4xl drop-shadow-xl">
                                 I'm a 17-year-old Student living near Munich, Germany and currently in 11th grade. 
                                 <br>
                                 Since I've been 15,
