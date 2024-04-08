@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/RED-Pxl.Github.io',
+  base: '/RED-Pixl.Github.io',
   plugins: [
     vue(),
   ],
