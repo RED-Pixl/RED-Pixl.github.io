@@ -9,12 +9,33 @@ export default {
                         posts: [
                                 ["logo", "Test", "Monday, 1st of January, 0000", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."]
                         ],
-                        subpage: "main"
+                        subpage: "main",
+                        scTimer: 0,
+                        scY: 0,
                 }
         },
         components: {
                 Test
-        }
+        },
+        mounted() {
+                window.addEventListener('scroll', this.handleScroll);
+        },
+        methods: {
+                handleScroll: function () {
+                        if (this.scTimer) return;
+                        this.scTimer = setTimeout(() => {
+                                this.scY = window.scrollY;
+                                clearTimeout(this.scTimer);
+                                this.scTimer = 0;
+                        }, 100);
+                },
+                toTop: function () {
+                        window.scrollTo({
+                                top: 0,
+                                behavior: "smooth"
+                        });
+                },
+        },
 }
 </script>
 
@@ -26,7 +47,7 @@ export default {
                         </h1>
                 </div>
                 <div v-for="post in posts">
-                        <div @click="subpage = 'test'" class="flex flex-row justify-center my-24">
+                        <div @click="subpage = post[0]; toTop()" class="flex flex-row justify-center my-24">
                                 <img :src="'/' + post[0] + '.png'"
                                         class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto mr-[-4rem] justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
@@ -46,7 +67,7 @@ export default {
                 </div>
         </div>
 
-        <Test v-if="subpage === 'test'" @back="subpage = 'main'"></Test>
+        <Test v-if="subpage === posts[0][0]" @back="subpage = 'main'; toTop()"></Test>
 </template>
 
 <style scoped></style>

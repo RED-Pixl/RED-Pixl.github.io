@@ -11,7 +11,9 @@ import Blog from './components/Blog.vue'
 export default {
         data() {
                 return {
-                        page: 'home'
+                        page: 'home',
+                        scTimer: 0,
+                        scY: 0,
                 }
         },
         components: {
@@ -21,16 +23,35 @@ export default {
                 Projects,
                 Contact,
                 Blog
-        }
+        },
+        mounted() {
+                window.addEventListener('scroll', this.handleScroll);
+        },
+        methods: {
+                handleScroll: function () {
+                        if (this.scTimer) return;
+                        this.scTimer = setTimeout(() => {
+                                this.scY = window.scrollY;
+                                clearTimeout(this.scTimer);
+                                this.scTimer = 0;
+                        }, 100);
+                },
+                toTop: function () {
+                        window.scrollTo({
+                                top: 0,
+                                behavior: "smooth"
+                        });
+                },
+        },
 }
 </script>
 
 <template>
-        <div class="bg-fixed bg-cover width-full m-0 text-gray-100"
-                style="background-image: url('/background.jpg')">
+        <div class="bg-fixed bg-cover width-full m-0 text-gray-100" style="background-image: url('/background.jpg')">
                 <div class="min-h-[100svh]">
 
-                        <Navbar @home="page = 'home'" @about="page = 'about'" @projects="page='projects'" @contact="page = 'contact'" @blog="page = 'blog'"></Navbar>
+                        <Navbar @home="page = 'home'; toTop()" @about="page = 'about'; toTop()" @projects="page = 'projects'; toTop()"
+                                @contact="page = 'contact'; toTop()" @blog="page = 'blog'; toTop()"></Navbar>
 
                         <Home v-if="page === 'home'" />
 
