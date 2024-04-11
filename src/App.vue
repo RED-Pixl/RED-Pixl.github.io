@@ -26,9 +26,9 @@ export default {
 </script>
 
 <template>
-        <div class="bg-fixed bg-cover min-h-screen width-full m-0 text-gray-100"
+        <div class="bg-fixed bg-cover width-full m-0 text-gray-100"
                 style="background-image: url('/background.jpg')">
-                <div class="min-h-screen">
+                <div class="min-h-[100svh]">
 
                         <Navbar @home="page = 'home'" @about="page = 'about'" @projects="page='projects'" @contact="page = 'contact'" @blog="page = 'blog'"></Navbar>
 
@@ -78,7 +78,7 @@ export default {
                         </div>
 
                         <!--Copyright section-->
-                        <div class="p-6 text-normal text-center">
+                        <div class="p-6 max-lg:pb-32 text-normal text-center">
                                 <span>© 2024 Copyright: </span>
                                 <a class="font-semibold" href="https://red-pixl.github.io/">Simon / RedPixl</a>
                         </div>

@@ -21,7 +21,7 @@ export default {
 <template>
         <div v-if="subpage === 'main'">
                 <div class="font-heading font-black tracking-tightest items-center align-center">
-                        <h1 class="text-7xl text-center font-black flex flex-col w-max pt-48 mx-auto">
+                        <h1 class="text-5xl md:text-7xl text-center font-black flex flex-col w-max pt-16 lg:pt-48 mx-auto">
                                 My Blog
                         </h1>
                 </div>

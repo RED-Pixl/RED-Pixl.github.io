@@ -23,11 +23,11 @@
 
 <template>
         <div v-if="subpage === 'main'" class="font-heading font-black tracking-tightest items-center align-center">
-                <h1 class="text-7xl text-center font-black flex flex-col w-max pt-48 mx-auto">
+                <h1 class="text-5xl md:text-7xl text-center font-black flex flex-col w-max pt-16 lg:pt-48 mx-auto">
                         My Projects:
                 </h1>
 
-                <div class="flex flex-row mt-8 tracking-normal justify-center">
+                <div class="flex flex-row flex-wrap content-center justify-center w-5/6 mx-auto mt-12">
 
                         <Card name="Schueler.In.TUM" image="/tum.jpg" class="m-12" @show="subpage = 'tum'"></Card>
 
