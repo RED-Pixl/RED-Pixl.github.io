@@ -17,7 +17,8 @@ export default {
         'heading': ['Lexend Giga', 'sans-serif']
       },
       letterSpacing: {
-        tightest: '-.5em'
+        tightest: '-.5em',
+        semitightest: '-.25em'
       }
     },
   },
