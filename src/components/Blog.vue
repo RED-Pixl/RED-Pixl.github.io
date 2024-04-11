@@ -27,7 +27,7 @@ export default {
                 </div>
                 <div v-for="post in posts">
                         <div @click="subpage = 'test'" class="flex flex-row justify-center my-24">
-                                <img :src="'/src/assets/' + post[0] + '.png'"
+                                <img :src="'/' + post[0] + '.png'"
                                         class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto mr-[-4rem] justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                                 <div

@@ -3,13 +3,13 @@ export default {
         data() {
                 return {
                         contact: [
-                                ["/src/assets/icons/mail.svg", "Email", "red.pixl123@gmail.com", "mailto:red.pixl123@gmail.com"],
-                                ["/src/assets/icons/discord.svg", "Discord", "red.pixl", "discord://@me/users/876474389300912188"],
-                                ["/src/assets/icons/instagram.svg", "Instagram", "red.pixl", "https://www.instagram.com/red.pixl/"],
-                                ["/src/assets/icons/threads.svg", "Threads", "red.pixl", "https://www.threads.net/@red.pixl"],
-                                ["/src/assets/icons/youtube.svg", "Youtube", "@red-Pixl", "https://www.youtube.com/@red-Pixl"],
-                                ["/src/assets/icons/bluesky.svg", "Bluesky", "@redpixl.bsky.social", "https://bsky.app/profile/redpixl.bsky.social"],
-                                ["/src/assets/icons/github.svg", "Github", "RED-Pixl", "https://github.com/RED-Pixl"]
+                                ["/icons/mail.svg", "Email", "red.pixl123@gmail.com", "mailto:red.pixl123@gmail.com"],
+                                ["/icons/discord.svg", "Discord", "red.pixl", "discord://@me/users/876474389300912188"],
+                                ["/icons/instagram.svg", "Instagram", "red.pixl", "https://www.instagram.com/red.pixl/"],
+                                ["/icons/threads.svg", "Threads", "red.pixl", "https://www.threads.net/@red.pixl"],
+                                ["/icons/youtube.svg", "Youtube", "@red-Pixl", "https://www.youtube.com/@red-Pixl"],
+                                ["/icons/bluesky.svg", "Bluesky", "@redpixl.bsky.social", "https://bsky.app/profile/redpixl.bsky.social"],
+                                ["/icons/github.svg", "Github", "RED-Pixl", "https://github.com/RED-Pixl"]
                         ]
                 }
         }

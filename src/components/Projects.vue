@@ -29,11 +29,11 @@
 
                 <div class="flex flex-row mt-8 tracking-normal justify-center">
 
-                        <Card name="Schueler.In.TUM" image="/src/assets/tum.jpg" class="m-12" @show="subpage = 'tum'"></Card>
+                        <Card name="Schueler.In.TUM" image="/tum.jpg" class="m-12" @show="subpage = 'tum'"></Card>
 
-                        <Card name="School Mania" image="/src/assets/schoolMania.jpeg" class="m-12" @show="subpage = 'game'"></Card>
+                        <Card name="School Mania" image="/schoolMania.jpeg" class="m-12" @show="subpage = 'game'"></Card>
 
-                        <Card name="This Website" image="/src/assets/website.png" class="m-12" @show="subpage = 'website'"></Card>
+                        <Card name="This Website" image="/website.png" class="m-12" @show="subpage = 'website'"></Card>
                 </div>
         </div>
 
