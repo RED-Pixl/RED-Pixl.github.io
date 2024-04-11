@@ -47,19 +47,19 @@ export default {
                         </h1>
                 </div>
                 <div v-for="post in posts">
-                        <div @click="subpage = post[0]; toTop()" class="flex flex-row justify-center my-24">
+                        <div @click="subpage = post[0]; toTop()" class="lg:flex lg:flex-row justify-center my-24">
                                 <img :src="'/' + post[0] + '.png'"
-                                        class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto mr-[-4rem] justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
+                                        class="w-96 h-96 max-lg:h-2/3 max-lg:w-2/3 m-16 max-lg:mx-auto lg:mr-0 lg:my-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                                 <div
-                                        class="h-64 w-5/6 max-w-5xl my-auto rounded-3xl border-y border-b-white/10 border-t-white/15 bg-black/15 shadow-xl shadow-black/30 backdrop-blur-3xl">
-                                        <h1 class="m-12 mb-6 font-bold font-normal text-5xl drop-shadow-xl">
+                                        class="max-lg:w-5/6 lg:w-1/2 xl:w-2/3 max-w-5xl m-16 max-lg:mx-auto max-lg:mt-[-6rem] lg:my-auto ml-[-6rem] rounded-3xl border-y border-b-white/10 border-t-white/15 bg-black/15 shadow-xl shadow-black/30 backdrop-blur-3xl">
+                                        <h1 class="p-12 pb-3 font-bold font-normal text-5xl drop-shadow-xl">
                                                 {{ post[1] }}
                                         </h1>
-                                        <p class="m-12 my-6 font-normal text-xl text-neutral-400 drop-shadow-xl">
+                                        <p class="p-12 py-3 font-normal text-xl text-neutral-400 drop-shadow-xl">
                                                 {{ post[2] }}
                                         </p>
-                                        <p class="m-12 my-6 font-normal text-3xl truncate drop-shadow-xl">
+                                        <p class="p-12 pt-3 font-normal text-3xl truncate drop-shadow-xl">
                                                 {{ post[3] }}
                                         </p>
                                 </div>

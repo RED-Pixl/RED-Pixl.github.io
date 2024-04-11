@@ -11,8 +11,8 @@
                         </button>
                 </div>
         </div>
-        <div class="font-heading font-black tracking-tightest items-center align-center">
-                <h1 class="text-5xl text-center font-black flex flex-col w-max pt-40 mx-auto">
+        <div class="font-heading font-black tracking-semitightest items-center align-center">
+                <h1 class="text-3xl lg:text-5xl text-center font-black flex flex-col w-max pt-40 mx-auto">
                         Test
                 </h1>
         </div>
@@ -20,13 +20,11 @@
                 Monday, 1st of January, 0000
         </p>
 
-        <div class="2xl:flex 2xl:flex-row justify-center">
-                <img src="/logo.png"
-                        class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
+        <div class="2xl:flex 2xl:flex-row justify-center my-12 lg:m-12">
+                <img src="/logo.png" class="w-2/3 h-2/3 lg:w-96 lg:h-96 mx-auto 2xl:m-16 justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
-                <div>
-                        <p
-                                class="m-12 max-2xl:mx-auto w-5/6 max-w-5xl font-normal max-2xl:text-center text-2xl drop-shadow-xl">
+                <div class="my-auto">
+                        <p class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam porro nobis
                                 sapiente autem nihil voluptas optio! 
                                 <br> <br>
@@ -41,7 +39,7 @@
                 </div>
         </div>
 
-        <p class="m-12 mx-auto w-5/6 max-w-[96rem] font-normal max-2xl:text-center text-2xl drop-shadow-xl">
+        <p class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quia illo voluptatum dolor quasi
                 repudiandae. Doloremque esse facilis possimus sint illo blanditiis similique magni, voluptate, eaque
                 sequi consequatur numquam fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam

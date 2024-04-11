@@ -5,7 +5,7 @@
 </script>
 
 <template>
-        <div class="w-64 h-64 lg:w-96 lg:h-96 justify-center overflow-visible items-center rounded-3xl bg-cover shadow-xl shadow-black/30 transition-transform hover:scale-110 border-y border-b-white/10 border-t-white/15" :style="{backgroundImage: 'url(' + image + ')'}">
+        <div class="w-64 h-64 lg:w-96 lg:h-96 aspect-square justify-center overflow-visible items-center rounded-3xl bg-cover shadow-xl shadow-black/30 transition-transform hover:scale-110 border-y border-b-white/10 border-t-white/15" :style="{backgroundImage: 'url(' + image + ')'}">
                 <div
                         class="relative top-[14rem] lg:top-[21rem] w-44 mx-auto p-4 rounded-3xl border-y border-b-white/10 border-t-white/15 bg-black/15 shadow-xl shadow-black/30 backdrop-blur-3xl tracking-normal">
 
