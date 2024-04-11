@@ -7,7 +7,7 @@
                 <div class="align-center flex flex-row justify-center">
                         <button @click="$emit('back')"
                                 class="flex flex-row w-12 h-12 gap-2 rounded-full p-2 transition hover:bg-white/5 active:scale-95 active:bg-white/10">
-                                <img src="/src/assets/icons/back.svg" class="w-6 h-6 m-1">
+                                <img src="/icons/back.svg" class="w-6 h-6 m-1">
                         </button>
                 </div>
         </div>
@@ -21,7 +21,7 @@
         </p>
 
         <div class="2xl:flex 2xl:flex-row justify-center">
-                <img src="/src/assets/logo.png"
+                <img src="/logo.png"
                         class="w-96 h-96 m-16 2xl:my-auto max-2xl:mx-auto justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                 <div>
