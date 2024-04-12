@@ -27,21 +27,15 @@
                                 I 10th grade, we had to make a game as a project. Normally, we would have used Java with
                                 BlueJ and a very simple graphics-system, where you could draw different shapes to the
                                 screen.
-                                <br> <br>
+                                <br>
                                 But I decided that was a bit to lame and wanted something more challenging, so I decided
                                 to make my game in libGDX.
+                                <br>
+                                You can check out the result on <a href="https://github.com/RED-Pixl/School-Mania">Github</a>, I might
+                                expand the project in the future.
                         </p>
                 </div>
         </div>
-
-        <p
-                class="m-12 mx-auto w-5/6 max-w-[96rem] font-normal max-2xl:text-center max-2xl:mx-auto text-2xl lg:text-4xl drop-shadow-xl">
-                I wouldn't say that the result was mindblowning, but neither were the submissions of the others and it
-                was quite fun to make.
-                <br>
-                You can check out the result on <a href="https://github.com/RED-Pixl/School-Mania">Github</a>, I might
-                expand the project in the future.
-        </p>
 </template>
 
 <style scoped></style>

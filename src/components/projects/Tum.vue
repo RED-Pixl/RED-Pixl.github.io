@@ -61,10 +61,9 @@ export default {
         </div>
 
         <p
-                class="m-12 mx-auto w-5/6 max-w-[96rem] font-normal max-2xl:text-center max-2xl:mx-auto text-2xl lg:text-4xl drop-shadow-xl">
-                If you are interested, you can visit the <a href="https://www.schueler.in.tum.de/"
-                        class="">Schueler.In.Tum-homepage</a> or contact me if you want to know more about my personal
-                expirience.
+                class="m-12 mx-auto w-5/6 max-w-[88rem] font-normal max-2xl:text-center max-2xl:mx-auto text-2xl lg:text-4xl drop-shadow-xl">
+                If you are interested, you can visit the <a href="https://www.schueler.in.tum.de/">Schueler.In.Tum-homepage</a> 
+                or contact me if you want to know more about my personal expirience.
         </p>
 </template>
 

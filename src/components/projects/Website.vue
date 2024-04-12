@@ -24,12 +24,10 @@
                 <div class="my-auto">
                         <p
                                 class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-2xl lg:text-4xl drop-shadow-xl">
-                                Well, since you are already here, I don't need to talk much about the content and the
-                                visuals of this website.
-                                <br> <br>
-                                But let me talk about the tech briefly: I use Vue with TailwindCSS for this website.
-                                There is honsetly no specific reason why I choose Vue, it was just the only
-                                frontend-framework I was familiar with.
+                                This site is built with Vue.js, a popular JavaScript framework I picked up along my
+                                coding journey. While Vue wasn't the only option, it provided a familiar starting point
+                                to bring this website to life. Tailwind CSS handles the styling, offering a
+                                utility-based approach that keeps the code clean and efficient.
                         </p>
                 </div>
         </div>

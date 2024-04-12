@@ -15,13 +15,10 @@
                 <div class="my-auto">
                         <p
                                 class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-2xl lg:text-4xl drop-shadow-xl">
-                                I'm a 17-year-old Student living near Munich, Germany and currently in 11th grade.
-                                <br>
-                                Since I've been 15,
-                                I've been studying computer science simultaniously to school at TUM through the offer of
-                                Schueler.In.TUM. Especially, I'm interested in the field of computer architekture,
-                                theory of computation
-                                and mathmatics.
+                                Living near Munich, Germany, I'm a 17-year-old student in 11th grade with a passion for
+                                computer science. Since turning 15, I've been delving into the subject through the
+                                Schueler.In.TUM program at the Technical University of Munich (TUM). My particular
+                                interests lie in computer architecture, the theory of computation, and mathematics.
                         </p>
                 </div>
         </div>

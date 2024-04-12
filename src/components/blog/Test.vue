@@ -42,7 +42,7 @@
         </div>
 
         <p
-                class="m-12 mx-auto w-5/6 max-w-[96rem] font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
+                class="m-12 mx-auto w-5/6 max-w-[88rem] font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quia illo voluptatum dolor quasi
                 repudiandae. Doloremque esse facilis possimus sint illo blanditiis similique magni, voluptate, eaque
                 sequi consequatur numquam fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam
