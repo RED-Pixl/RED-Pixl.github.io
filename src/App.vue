@@ -50,8 +50,9 @@ export default {
         <div class="bg-fixed bg-cover width-full m-0 text-gray-100" style="background-image: url('/background.jpg')">
                 <div class="min-h-[100svh]">
 
-                        <Navbar @home="page = 'home'; toTop()" @about="page = 'about'; toTop()" @projects="page = 'projects'; toTop()"
-                                @contact="page = 'contact'; toTop()" @blog="page = 'blog'; toTop()"></Navbar>
+                        <Navbar @home="page = 'home'; toTop()" @about="page = 'about'; toTop()"
+                                @projects="page = 'projects'; toTop()" @contact="page = 'contact'; toTop()"
+                                @blog="page = 'blog'; toTop()"></Navbar>
 
                         <Home v-if="page === 'home'" />
 

@@ -21,17 +21,19 @@
         </p>
 
         <div class="2xl:flex 2xl:flex-row justify-center my-12 lg:m-12">
-                <img src="/logo.png" class="w-2/3 h-2/3 lg:w-96 lg:h-96 mx-auto 2xl:m-16 justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
+                <img src="/logo.png"
+                        class="w-2/3 h-2/3 lg:w-96 lg:h-96 mx-auto 2xl:m-16 justify-center items-center rounded-3xl bg-cover shadow-xl shadow-black/30 border-y border-b-white/10 border-t-white/15 transition-transform hover:scale-110"></img>
 
                 <div class="my-auto">
-                        <p class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
+                        <p
+                                class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis aperiam porro nobis
-                                sapiente autem nihil voluptas optio! 
+                                sapiente autem nihil voluptas optio!
                                 <br> <br>
                                 Cupiditate non eligendi recusandae adipisci
                                 incidunt fugiat? Facere laudantium perferendis dignissimos commodi rerum? Lorem ipsum
                                 dolor sit amet, consectetur adipisicing elit. Distinctio, magnam id molestias porro nemo
-                                blanditiis accusantium nostrum earum sapiente dignissimos. 
+                                blanditiis accusantium nostrum earum sapiente dignissimos.
                                 <br> <br>
                                 Voluptate amet numquam
                                 assumenda corrupti ratione labore, quibusdam sapiente sequi.
@@ -39,7 +41,8 @@
                 </div>
         </div>
 
-        <p class="m-12 w-5/6 max-w-5xl font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
+        <p
+                class="m-12 mx-auto w-5/6 max-w-[96rem] font-normal max-2xl:text-center max-2xl:mx-auto text-lg lg:text-2xl drop-shadow-xl">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quia illo voluptatum dolor quasi
                 repudiandae. Doloremque esse facilis possimus sint illo blanditiis similique magni, voluptate, eaque
                 sequi consequatur numquam fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quam

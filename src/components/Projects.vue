@@ -56,7 +56,8 @@ export default {
                         <Card name="School Mania" image="/schoolMania.jpeg" class="m-12"
                                 @show="subpage = 'game'; toTop()"></Card>
 
-                        <Card name="This Website" image="/website.png" class="m-12" @show="subpage = 'website'; toTop()">
+                        <Card name="This Website" image="/website.png" class="m-12"
+                                @show="subpage = 'website'; toTop()">
                         </Card>
                 </div>
         </div>

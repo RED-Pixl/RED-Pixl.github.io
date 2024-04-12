@@ -23,15 +23,16 @@ export default {
                 </h1>
         </div>
         <div class="flex flex-row flex-wrap content-center justify-center w-5/6 mx-auto mt-12">
-                        <a v-for="item in contact" :href="item[3]" class="flex flex-col w-96 m-6 p-4 rounded-3xl border-y border-b-white/10 border-t-white/15 bg-black/15 shadow-xl shadow-black/30 backdrop-blur-3xl transition-transform hover:scale-110">
-                                <img :src="item[0]" class="w-12 h-12 m-4 mx-auto">
-                                <h1 class="text-2xl text-center font-normal w-max m-2 mx-auto">
-                                        {{ item[1] }}
-                                </h1>
-                                <p class="text-xl text-center font-normal flex flex-col w-max m-2 mx-auto">
-                                        {{ item[2] }}
-                                </p>
-                        </a>
+                <a v-for="item in contact" :href="item[3]"
+                        class="flex flex-col w-96 m-6 p-4 rounded-3xl border-y border-b-white/10 border-t-white/15 bg-black/15 shadow-xl shadow-black/30 backdrop-blur-3xl transition-transform hover:scale-110">
+                        <img :src="item[0]" class="w-12 h-12 m-4 mx-auto">
+                        <h1 class="text-2xl text-center font-normal w-max m-2 mx-auto">
+                                {{ item[1] }}
+                        </h1>
+                        <p class="text-xl text-center font-normal flex flex-col w-max m-2 mx-auto">
+                                {{ item[2] }}
+                        </p>
+                </a>
         </div>
 </template>
 
