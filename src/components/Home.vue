@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-        <div class="font-heading font-black tracking-tightest items-center align-center lg:min-h-screen">
+        <div class="font-heading font-black tracking-tightest items-center align-center">
                 <h1
                         class="text-5xl md:text-7xl xl:text-9xl text-center font-black flex flex-col w-5/6 max-w-6xl pt-16 lg:pt-48 mx-auto">
                         Hey, I'm Simon, aka <img src="/name.png" alt="Red Pixl" class="w-5/6 max-w-4xl my-6 mx-auto">

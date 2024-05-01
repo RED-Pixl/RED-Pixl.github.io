@@ -5,7 +5,7 @@ export default {
                         contact: [
                                 ["/icons/mail.svg", "Email", "red.pixl123@gmail.com", "mailto:red.pixl123@gmail.com"],
                                 ["/icons/discord.svg", "Discord", "red.pixl", "discord://@me/users/876474389300912188"],
-                                ["/icons/instagram.svg", "Instagram", "red.pixl", "https://www.instagram.com/red.pixl/"],
+                                ["/icons/pinterest.svg", "Pinterest", "redpixl123", "https://pin.it/4xg64UgnF"],
                                 ["/icons/threads.svg", "Threads", "red.pixl", "https://www.threads.net/@red.pixl"],
                                 ["/icons/youtube.svg", "Youtube", "@red-Pixl", "https://www.youtube.com/@red-Pixl"],
                                 ["/icons/bluesky.svg", "Bluesky", "@redpixl.bsky.social", "https://bsky.app/profile/redpixl.bsky.social"],
